@@ -8,15 +8,15 @@
            "expression": "10",
            "dependencies" :[ ]       
         }, {
+           "name" : "c",
+           "expressionType" : "DOLLAR_EXPRESSION",
+           "expression" : "10 + ${b}",
+           "dependencies" : ["b"]
+        }, {
            "name" : "b",
            "expressionType" : "RS_EXPRESSION",
            "expression" : "${a} + 10",
            "dependencies" : ["a"]
-        }, {
-           "name" : "c",
-           "expressionType" : "DOLLAR_EXPRESSION",
-           "expression" : "${b} + 10",
-           "dependencies" : ["b"]
         }
     ]
   }, {
@@ -32,6 +32,11 @@
            "expressionType" : "RS_EXPRESSION",
            "expression" : "${a} + 10",
            "dependencies" : ["a"]
+        }, {
+           "name" : "c",
+           "expressionType" : "DOLLAR_EXPRESSION",
+           "expression" : "10 + ${b}",
+           "dependencies" : ["b"]
         }
     ]
   }, {
