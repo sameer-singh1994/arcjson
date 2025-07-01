@@ -1,0 +1,41 @@
+[
+ {
+    "groupName"  :  "Group1",
+    "expressions":   [    
+	{ 
+           "name" : "a",
+           "expressionType" : "DIRECT",
+           "expression": "10",
+           "dependencies" :[ ]       
+        }, {
+           "name" : "b",
+           "expressionType" : "RS_EXPRESSION",
+           "expression" : "${a} + 10",
+           "dependencies" : ["a"]
+        }, {
+           "name" : "c",
+           "expressionType" : "DOLLAR_EXPRESSION",
+           "expression" : "${b} + 10",
+           "dependencies" : ["b"]
+        }
+    ]
+  }, {
+    "groupName"  :  "Group2",
+    "expressions":   [    
+	{ 
+           "name" : "a",
+           "expressionType" : "DIRECT",
+           "expression": "20",
+           "dependencies" :[ ]
+        }, {
+           "name" : "b",
+           "expressionType" : "RS_EXPRESSION",
+           "expression" : "${a} + 10",
+           "dependencies" : ["a"]
+        }
+    ]
+  }, {
+    "groupName"  :  "Group3",
+    "expressions":   [ ]
+  }
+]
