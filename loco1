@@ -2,10 +2,10 @@
  {
     "groupName"  :  "Group1",
     "expressions":   [    
-	{ 
+	      { 
            "name" : "a",
            "expressionType" : "DIRECT",
-           "expression": "10",
+           "expression" : "10",
            "dependencies" :[ ]       
         }, {
            "name" : "c",
@@ -19,7 +19,8 @@
            "dependencies" : ["a"]
         }
     ]
-  }, {
+  },
+  {
     "groupName"  :  "Group2",
     "expressions":   [    
 	{ 
@@ -39,8 +40,5 @@
            "dependencies" : ["b"]
         }
     ]
-  }, {
-    "groupName"  :  "Group3",
-    "expressions":   [ ]
   }
 ]
